@@ -1,0 +1,850 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>
+<html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>
+<html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>
+<html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js"> <!--<![endif]-->
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="description" content="dév'art ">
+
+    <meta name="author" content="Stephen dupré">
+
+    <title>Dév'art | Développeur web freelance</title>
+
+    <!-- Mobile Specific Meta
+    ================================================== -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" type="image/x-icon" href="img/favicon.png"/>
+
+    <!-- CSS
+    ================================================== -->
+    <!-- Fontawesome Icon font -->
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <!-- bootstrap.min css -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- Animate.css -->
+    <link rel="stylesheet" href="css/animate.css">
+    <!-- Owl Carousel -->
+    <link rel="stylesheet" href="css/owl.carousel.css">
+    <!-- Grid Component css -->
+    <link rel="stylesheet" href="css/component.css">
+    <!-- Slit Slider css -->
+    <link rel="stylesheet" href="css/slit-slider.css">
+    <!-- Main Stylesheet -->
+    <link rel="stylesheet" href="css/main.css">
+    <!-- Media Queries -->
+    <link rel="stylesheet" href="css/media-queries.css">
+
+    <!--
+    Google Font
+    =========================== -->
+
+    <!-- Oswald / Title Font -->
+    <link href='http://fonts.googleapis.com/css?family=Oswald:400,300' rel='stylesheet' type='text/css'>
+    <!-- Ubuntu / Body Font -->
+    <link href='http://fonts.googleapis.com/css?family=Ubuntu:400,300' rel='stylesheet' type='text/css'>
+
+    <!-- Modernizer Script for old Browsers -->
+    <script src="js/modernizr-2.6.2.min.js"></script>
+
+
+    <script>
+        (function (i, s, o, g, r, a, m) {
+            i['GoogleAnalyticsObject'] = r;
+            i[r] = i[r] || function () {
+                    (i[r].q = i[r].q || []).push(arguments)
+                }, i[r].l = 1 * new Date();
+            a = s.createElement(o),
+                m = s.getElementsByTagName(o)[0];
+            a.async = 1;
+            a.src = g;
+            m.parentNode.insertBefore(a, m)
+        })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+
+        ga('create', 'UA-99027662-1', 'auto');
+        ga('send', 'pageview');
+
+    </script>
+
+</head>
+
+<body id="body">
+<!--
+Start Preloader
+==================================== -->
+<div id="loading-mask">
+    <div class="loading-img">
+        <img alt="Meghna Preloader" src="img/preloader.gif"  />
+    </div>
+</div>
+<!--
+End Preloader
+==================================== -->
+
+<!--
+Welcome Slider
+==================================== -->
+<section id="home">
+
+    <div id="slitSlider" class="sl-slider-wrapper">
+        <div class="sl-slider">
+
+            <!-- single slide item -->
+            <div class="sl-slide" data-orientation="horizontal" data-slice1-rotation="-25" data-slice2-rotation="-25"
+                 data-slice1-scale="2" data-slice2-scale="2">
+                <div class="sl-slide-inner">
+                    <div class="bg-img bg-img-1"></div>
+                    <div class="carousel-caption">
+                        <div>
+                            <img class="wow fadeInUp" src="img/logoBack.png" alt="dév'art">
+                            <h2 data-wow-duration="500ms" data-wow-delay="500ms" class="heading animated fadeInRight">
+                                Bienvenue sur dévart.com</h2>
+                            <h3 data-wow-duration="500ms" data-wow-delay="500ms" class="heading animated fadeInRight">
+                                Développeur web freelance</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- /single slide item -->
+
+            <!-- single slide item -->
+            <div class="sl-slide" data-orientation="vertical" data-slice1-rotation="10" data-slice2-rotation="-15"
+                 data-slice1-scale="1.5" data-slice2-scale="1.5">
+                <div class="sl-slide-inner">
+                    <div class="bg-img bg-img-2"></div>
+                    <div class="carousel-caption">
+                        <div>
+                            <h2 class="heading animated fadeInDown"> Responsive Design</h2>
+                            <h3 class="animated fadeInUp">Votre site s'adapte à l'écran de votre client</h3>
+                            <a class="btn btn-green animated fadeInUp" href="#services">En savoir +</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- /single slide item -->
+
+            <!-- single slide item -->
+            <div class="sl-slide" data-orientation="horizontal" data-slice1-rotation="3" data-slice2-rotation="3"
+                 data-slice1-scale="2" data-slice2-scale="1">
+                <div class="sl-slide-inner">
+                    <div class="bg-img bg-img-3"></div>
+                    <div class="carousel-caption">
+                        <div>
+                            <h2 class="heading animated fadeInRight">Web design</h2>
+                            <h3 class="animated fadeInLeft">Création d'une identité visuelle à votre image</h3>
+                            <a class="btn btn-green animated fadeInUp" href="#services">En savoir +</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- /single slide item -->
+
+        </div><!-- /sl-slider -->
+
+        <nav id="nav-arrows" class="nav-arrows">
+            <span class="nav-arrow-prev">Previous</span>
+            <span class="nav-arrow-next">Next</span>
+        </nav>
+
+        <nav id="nav-dots" class="nav-dots">
+            <span class="nav-dot-current"></span>
+            <span></span>
+            <span></span>
+        </nav>
+
+    </div><!-- /slider-wrapper -->
+</section>
+<!--/#home section-->
+
+<!--
+Fixed Navigation
+==================================== -->
+<header id="navigation" class="navbar navbar-inverse">
+    <div class="container">
+        <div class="navbar-header">
+            <!-- responsive nav button -->
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <!-- /responsive nav button -->
+
+            <!-- logo -->
+            <a class="navbar-brand" href="#body">
+                <h1 id="logo"><img src="img/logo-dévart.png"/></h1>
+            </a>
+            <!-- /logo -->
+        </div>
+
+        <!-- main nav -->
+        <nav class="collapse navbar-collapse navbar-right" role="Navigation">
+            <ul id="nav" class="nav navbar-nav">
+                <li class="current"><a href="#body">Accueil</a></li>
+                <li><a href="#about">Présentation</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#showcase">Réalisations</a></li>
+                <li><a href="#team-skills">Compétences</a></li>
+                <li><a href="#blog">Blog</a></li>
+                <li><a href="#contact-us">Contact</a></li>
+            </ul>
+        </nav>
+        <!-- /main nav -->
+
+    </div>
+</header>
+<!--
+End Fixed Navigation
+==================================== -->
+
+<!--
+Start About Section
+==================================== -->
+<section id="about" class="bg-one">
+    <div class="container">
+        <div class="row">
+
+
+            <!-- About item -->
+
+            <!-- End About item -->
+
+            <!-- About item -->
+            <div class="col-lg-4 col-md-6 col-md-offset-0 wow fadeInUp" data-wow-duration="500ms" data-wow-delay="250ms">
+                <div class="wrap-about">
+                    <div class="bg-left"><img src="img/reza.jpg"></div>
+                </div>
+            </div>
+            <!-- End About item -->
+
+            <!-- About item -->
+            <div class="col-lg-8 col-lg-offset-6 col-md-6 col-md-offset-7 text-center wow fadeInUp" data-wow-duration="500ms"
+                 data-wow-delay="500ms">
+                <div class="presentation">
+                    <!-- section title -->
+                    <div id="presentation" class="title text-center wow fadeIn" data-wow-duration="1500ms">
+                        <h2>Stephen <span class="color">Dupré</span></h2>
+                        <div class="border"></div>
+                    </div>
+                    <!-- /section title -->
+                    <div>
+                        <h2 class="title-presentation">Développeur freelance, je vous conseille et vous accompagne dans
+                            la construction
+                            de vos projets web.</h2><br/>
+                        <hr>
+                        <br/>
+                        <p>
+                            Parce que mon métier ne s’arrête pas derrière mes lignes de code, j’analyse vos contraintes
+                            avant de mettre au point la solution technique qui répond réellement à vos exigences.
+                        </p>
+                        <p>
+                            Pour vos projets, je choisis des technologies flexibles, évolutives et adaptables, qui vous
+                            offriront des back-offices aux interfaces intuitives, faciles à manipuler, sans
+                            fonctionnalité superflue.
+                        </p>
+                        <p>
+                            Agences, professionnels, graphistes, que ce soit pour le développement complet d’un site, la
+                            reprise/maintenance d’une administration, ou encore pour renforcer vos équipes, je me mets à
+                            votre service pour vous proposer des solutions robustes et efficaces, adaptées à vos
+                            besoins.
+                        </p>
+                        <br/>
+                        <a href="#team-skills" class="btn btn-transparent">Mes compétences</a>
+                    </div>
+                </div>
+            </div>
+            <!-- End About item -->
+
+        </div>        <!-- End row -->
+    </div>    <!-- End container -->
+</section>   <!-- End section -->
+
+<!-- Start Services Section
+==================================== -->
+
+<section id="services" class="parallax-section">
+    <div class="container">
+        <div class="row">
+
+            <!-- section title -->
+            <div class="title text-center wow fadeIn" data-wow-duration="500ms">
+                <h2>Développeur web <span class="color">full-stack</span></h2>
+                <div class="border"></div>
+            </div>
+            <!-- /section title -->
+
+            <!-- Single Service Item -->
+            <article class="col-md-4 col-sm-6 col-xs-12 wow fadeInUp" data-wow-duration="500ms">
+                <div class="service-block text-center">
+                    <div class="service-icon text-center">
+                        <i class="fa fa-wordpress fa-5x"></i>
+                    </div>
+                    <h3>WordPress</h3>
+                    <p>Ce qui était à l'origine un simple moteur de blog plutôt qu'un véritable CMS est devenu
+                        aujourd'hui le leader incontesté au niveau mondial (en nombre de sites).<br/> Sa grande
+                        simplicité est son atout principal, mais Wordpress peut s'avérer moins adapté pour des projets
+                        complexes.</p>
+                </div>
+            </article>
+            <!-- End Single Service Item -->
+
+            <!-- Single Service Item -->
+            <article class="col-md-4 col-sm-6 col-xs-12 wow fadeInDown" data-wow-duration="500ms"
+                     data-wow-delay="200ms">
+                <div class="service-block text-center">
+                    <div class="service-icon text-center">
+                        <i class="fa fa-desktop fa-5x"></i>
+                    </div>
+                    <h3>Développement web</h3>
+                    <p>Je développe votre site, vitrine, boutique ou application web. J’utilise les technologies les
+                        plus performantes (HTML5, CSS3, Bootstrap,jQuery, Php & Symfony 3) et les meilleures solutions
+                        open source disponibles ( Worpress, Prestashop, Drupal 7 ) pour le développement de sites
+                        internet et d'applications.</p>
+                </div>
+            </article>
+            <!-- End Single Service Item -->
+            <!-- Single Service Item -->
+            <article class="col-md-4 col-sm-6 col-xs-12 wow fadeInUp" data-wow-duration="500ms" data-wow-delay="200ms">
+                <div class="service-block text-center">
+                    <div class="service-icon text-center">
+                        <i class="fa fa-mobile-phone fa-5x"></i>
+                    </div>
+                    <h3>Responsive Design</h3>
+                    <p>Site Web Responsive La philosophie du design responsive est un puissant moyen de création de
+                        sites web adaptés mobile. Je peux vous aider à accroître l’engagement et la rétention des
+                        utilisateurs en créant un site Web évoluant de façon transparente entre les différents types
+                        d’appareils.</p>
+                </div>
+            </article>
+            <!-- End Single Service Item -->
+
+            <!-- Single Service Item -->
+            <article class="col-md-4 col-md-offset-2 col-sm-6 col-xs-12 wow fadeInUp" data-wow-duration="500ms"
+                     data-wow-delay="400ms">
+                <div class="service-block text-center">
+                    <div class="service-icon text-center">
+                        <i class="fa fa-google fa-5x"></i>
+                    </div>
+                    <h3>Référencement</h3><br />
+                    <p>SEO & SEA <br />
+                       <br /> Le but d'un site web est d'être visité. Je peux vous accompagner dans l'optimisation de la visibilité de votre site web sur les moteurs de recherche, que cela soit du référencement naturel ou payant.</p>
+                </div>
+            </article>
+            <!-- End Single Service Item -->
+
+            <!-- Single Service Item -->
+            <article class="col-md-4 col-sm-6 col-xs-12 wow fadeInDown" data-wow-duration="500ms"
+                     data-wow-delay="200ms">
+                <div class="service-block text-center">
+                    <div class="service-icon text-center">
+                        <i class="fa fa-dashboard fa-5x"></i>
+                    </div>
+                    <h3>Gestion de projet</h3>
+                    <p>Envie de me confier votre projet de A à Z ? Nous étudierons ensemble vos besoins jusqu'à
+                        rédaction puis validation d'un cahier des charges ; étant en étroite relation avec d'autres
+                        indépendants, je peux transférer la réalisation graphique en toute confiance, tout en m'occupant
+                        des développements et de vos retours.</p>
+                </div>
+            </article>
+            <!-- End Single Service Item -->
+
+
+        </div>        <!-- End row -->
+    </div>    <!-- End container -->
+</section>   <!-- End section -->
+
+
+<!-- Start Portfolio Section
+=========================================== -->
+
+<section id="showcase">
+    <div class="container">
+        <div class="row wow fadeInDown" data-wow-duration="500ms">
+            <div class="col-lg-12">
+
+                <!-- section title -->
+                <div class="title text-center">
+                    <h2>Mes <span class="color">Réalisations</span></h2>
+                    <div class="border"></div>
+                </div>
+                <!-- /section title -->
+
+                <!-- portfolio item filtering -->
+                <div class="portfolio-filter clearfix">
+                    <ul class="text-center">
+                        <li><a href="javascript:void(0)" class="filter" data-filter="all">Toutes</a></li>
+                        <li><a href="javascript:void(0)" class="filter" data-filter=".app">Sites Vitrine</a></li>
+                        <li><a href="javascript:void(0)" class="filter" data-filter=".web">Blogs</a></li>
+                        <li><a href="javascript:void(0)" class="filter" data-filter=".photoshop">Ecommerce</a></li>
+                        <li><a href="javascript:void(0)" class="filter" data-filter=".illustrator">Applications</a></li>
+                    </ul>
+                </div>
+                <!-- /portfolio item filtering -->
+
+            </div> <!-- /end col-lg-12 -->
+        </div> <!-- end row -->
+    </div>    <!-- end container -->
+
+    <!-- portfolio items -->
+    <div class="portfolio-item-wrapper wow fadeInUp" data-wow-duration="500ms">
+        <ul id="og-grid" class="og-grid">
+
+            <!-- single portfolio item -->
+            <li class="mix app">
+                <a href="http://213.32.18.56/Projet1/index.html" data-largesrc="img/portfolio/1.png"
+                   data-title="Web Agency"
+                   data-description="Site vitrine d'une agence web développer full html 5 et css 3">
+                    <img src="img/portfolio/1.png" alt="Web Agency" width="350">
+                    <div class="hover-mask">
+                        <h3 class="title-site">Web Agency</h3>
+                        <span>
+									<i class="fa fa-plus fa-2x"></i>
+								</span>
+                    </div>
+                </a>
+            </li>
+            <!-- /single portfolio item -->
+
+            <!-- single portfolio item -->
+            <li class="mix web">
+                <a href="javascript:void(0)" data-largesrc="img/portfolio/3.png" data-title="WriterBlog"
+                   data-description="Blog avec administration, le client souhaitait pouvoir publier son nouveau roman en ligne. La solution devait lui permettre de publier et de gérer commentaires et utilisateurs sans toucher au code.">
+                    <img src="img/portfolio/3.png" alt="Blog" width="350">
+                    <div class="hover-mask">
+                        <h3>WriterBlog</h3>
+                        <span>
+									<i class="fa fa-plus fa-2x"></i>
+								</span>
+                    </div>
+                </a>
+            </li>
+            <!-- /single portfolio item -->
+
+            <!-- single portfolio item -->
+            <li class="mix photoshop">
+                <a href="javascript:void(0)" data-largesrc="img/portfolio/4.png" data-title="Génération Haribo"
+                   data-description="Cms de boutique en ligne. Développer avec Symfony 3, affichage des produits en vente, gestion du pannier, gestion et création de produits triable par catégorie. Création de compte client. Solution de paiement mise en place avec Stripe. Possibilité de télécharger les factures sous forme de pdf.">
+                    <img src="img/portfolio/4.png" alt="Haribo" width="350">
+                    <div class="hover-mask">
+                        <h3>Génération Haribo</h3>
+                        <span>
+									<i class="fa fa-plus fa-2x"></i>
+								</span>
+                    </div>
+                </a>
+            </li>
+            <!-- /single portfolio item -->
+            <!-- single portfolio item -->
+            <li class="mix photoshop">
+                <a href="https://devart-2.myshopify.com/" data-largesrc="img/portfolio/5.png" data-title="DOGYCAT"
+                   data-description="Ma première boutique en ligne, sur laquelle vous pouvez acheter des article pour chien et chat. Utilisation de l'api Stripe mais aussi Paypal et Amazonpay. La boutique est mis en avant par une page facebook qui est la pièce maitresse de mon plan marketing.">
+                    <img src="img/portfolio/5.png" alt="DOGYCAT" width="350">
+                    <div class="hover-mask">
+                        <h3>DOGYCAT</h3>
+                        <span>
+									<i class="fa fa-plus fa-2x"></i>
+								</span>
+                    </div>
+                </a>
+            </li>
+            <!-- /single portfolio item -->
+            <!-- single portfolio item -->
+            <li class="mix illustrator">
+                <a href="http://213.32.18.56/Velib'%201.0/index.html" data-largesrc="img/portfolio/capture.png"
+                   data-title="Vélib'"
+                   data-description="Application permettant la réservation de vélib' en temps réelle sur Paris">
+                    <img src="img/portfolio/capture.png" alt="Vélib'" width="350">
+                    <div class="hover-mask">
+                        <h3>Vélib'</h3>
+                        <span>
+									<i class="fa fa-plus fa-2x"></i>
+								</span>
+                    </div>
+                </a>
+            </li>
+            <!-- /single portfolio item -->
+
+
+        </ul> <!-- end og grid -->
+    </div>  <!-- portfolio items wrapper -->
+
+</section>   <!-- End section -->
+
+
+<!-- Start Team Skills
+=========================================== -->
+
+<section id="team-skills" class="parallax-section">
+    <div class="container">
+        <div class="row wow fadeInDown" data-wow-duration="500ms">
+
+            <!-- section title -->
+            <div class="title text-center">
+                <h2>Mes <span class="color">Compétences </span></h2>
+                <div class="border"></div>
+            </div>
+            <!-- /section title -->
+
+            <!-- skill set -->
+            <div class="col-md-3 col-sm-6 col-xs-12 wow fadeInUp" data-wow-duration="500ms">
+                <div class="skill-chart text-center">
+							<span class="chart" data-percent="80">
+								<span class="percent"></span>
+							</span>
+                    <h3><i class="fa fa-wordpress"></i> Wordpress</h3>
+                </div>
+            </div>
+            <!-- end skill set -->
+
+            <!-- skill set -->
+            <div class="col-md-3 col-sm-6 col-xs-12 wow fadeInUp" data-wow-duration="500ms" data-wow-delay="200ms">
+                <div class="skill-chart text-center">
+							<span class="chart" data-percent="90">
+								<span class="percent">86</span>
+							</span>
+                    <h3><i class="fa fa-html5"></i> HTML 5 & <i class="fa fa-css3"> CSS 3</i></h3>
+                </div>
+            </div>
+            <!-- end skill set -->
+
+            <!-- skill set -->
+            <div class="col-md-3 col-sm-6 col-xs-12 wow fadeInUp" data-wow-duration="500ms" data-wow-delay="400ms">
+                <div class="skill-chart text-center">
+							<span class="chart" data-percent="65">
+								<span class="percent"></span>
+							</span>
+                    <h3>PHP 7</h3>
+                </div>
+            </div>
+            <!-- end skill set -->
+
+            <!-- skill set -->
+            <div class="col-md-3 col-sm-6 col-xs-12 wow fadeInUp" data-wow-duration="500ms" data-wow-delay="600ms">
+                <div class="skill-chart text-center">
+							<span class="chart" data-percent="55">
+								<span class="percent"></span>
+							</span>
+                    <h3> Symfony 3</h3>
+                </div>
+            </div>
+            <!-- end skill set -->
+
+        </div>        <!-- End row -->
+    </div>    <!-- End container -->
+</section>   <!-- End section -->
+
+<!--
+Start Blog Section
+=========================================== -->
+
+<section id="blog" class="bg-one">
+    <div class="container">
+        <div class="row">
+
+            <!-- section title -->
+            <div class="remplacement">
+                <div class="title text-center wow fadeInUpBig">
+                    <h2><span class="color">" </span>Section <span class="color">blog</span> en construction,<span
+                            class="color"> ouverture dans quelques jours </span> "</h2><br/>
+                    <div class="border"></div>
+                </div>
+                <div class="bg"><img src="img/EnTravaux.png"></div>
+            </div>
+            <!-- /section title -->
+
+            <div class="clearfix">
+
+                <!-- single blog post
+                <article class="col-md-3 col-sm-6 col-xs-12 clearfix wow fadeInUp" data-wow-duration="500ms">
+                    <div class="note">
+                        <div class="media-wrapper">
+                            <img src="img/blog/amazing-caves-coverimage.jpg" alt="amazing caves coverimage" class="img-responsive">
+                        </div>
+
+                        <div class="excerpt">
+                            <h3>Simple Image Post</h3>
+                            <p>Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non skateboard dolor brunch.</p>
+                            <a class="btn btn-transparent" href="single-post.html">Read more</a>
+                        </div>
+                    </div>
+                </article>  -->
+                <!-- /single blog post -->
+
+                <!-- single blog post
+                <article class="col-md-3 col-sm-6 col-xs-12 wow fadeInUp" data-wow-duration="500ms" data-wow-delay="200ms">
+                    <div class="note">
+                        <div id="gallery-post" class="media-wrapper">
+                            <div class="item">
+                                <img src="img/blog/amazing-caves-coverimage.jpg" alt="amazing caves coverimage" class="img-responsive">
+                            </div>
+                            <div class="item">
+                                <img src="img/blog/bicycle.jpg" alt="Flying bicycle" class="img-responsive">
+                            </div>
+                            <div class="item">
+                                <img src="img/blog/3D-beach-art.jpg" alt="3D Beach Art | Meghna" class="img-responsive">
+                            </div>
+                        </div>
+
+                        <div class="excerpt">
+                            <h3>Simple Slider Post</h3>
+                            <p>Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non skateboard dolor brunch.</p>
+                            <a class="btn btn-transparent" href="single-post.html">Read more</a>
+                        </div>
+                    </div>
+                </article> -->
+                <!-- end single blog post -->
+
+                <!-- single blog post
+                <article class="col-md-3 col-sm-6 col-xs-12 wow fadeInUp" data-wow-duration="500ms" data-wow-delay="400ms">
+                    <div class="note">
+                        <div class="media-wrapper">
+                            <img src="img/blog/amazing-caves-coverimage.jpg" alt="amazing caves coverimage" class="img-responsive">
+                        </div>
+
+                        <div class="excerpt">
+                            <h3>Simple Image Post</h3>
+                            <p>Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non skateboard dolor brunch.</p>
+                            <a class="btn btn-transparent" href="single-post.html">Read more</a>
+                        </div>
+                    </div>
+                </article> -->
+                <!-- end single blog post -->
+
+                <!-- single blog post
+                <article class="col-md-3 col-sm-6 col-xs-12 wow fadeInUp" data-wow-duration="500ms" data-wow-delay="600ms">
+                    <div class="note kill-margin-bottom">
+                        <div class="media-wrapper">
+                            <img src="img/blog/amazing-caves-coverimage.jpg" alt="amazing caves coverimage" class="img-responsive">
+                        </div>
+                        <div class="excerpt">
+                            <h3>Simple Image Post</h3>
+                            <p>Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non skateboard dolor brunch.</p>
+                            <a class="btn btn-transparent" href="single-post.html">Read more</a>
+                        </div>
+                    </div>
+                </article> -->
+                <!-- end single blog post-->
+            </div>
+            <!-- <div class="all-post text-center">
+                <a class="btn btn-transparent" href="blog.html">View All Post</a>
+            </div> -->
+
+        </div> <!-- end row -->
+    </div> <!-- end container -->
+</section> <!-- end section -->
+
+
+<!-- Start Twitter Feed
+=========================================== -->
+
+<section id="twitter-feed" class="parallax-section">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 text-center">
+
+                <!-- twitter bird -->
+                <div class="twitter-bird wow fadeInDown" data-wow-duration="500ms">
+							<span>
+								<i class="fa fa-twitter fa-4x"></i>
+							</span>
+                </div>
+                <!-- /twitter bird -->
+
+                <!-- fetching tweet -->
+                <div class="tweet wow fadeIn" data-wow-duration="2000ms"></div>
+                <!-- /fetching tweet -->
+
+                <!-- follow us button -->
+                <a href="https://twitter.com/devart64" title="Follow Us" target="_blank"
+                   class="btn btn-transparent wow fadeInUp" data-wow-duration="500ms">Suivez Moi</a>
+                <!-- /follow us button -->
+
+            </div>
+        </div>       <!-- End row -->
+    </div>    <!-- End container -->
+</section>   <!-- End section -->
+
+
+<!-- Srart Contact Us
+=========================================== -->
+<section id="contact-us">
+    <div class="container">
+        <div class="row">
+
+            <!-- section title -->
+            <div class="title text-center wow fadeIn" data-wow-duration="500ms">
+                <h2>Me <span class="color">Contacter</span></h2>
+                <div class="border"></div>
+            </div>
+            <!-- /section title -->
+
+            <!-- Contact Details -->
+            <div class="contact-info col-md-6 wow fadeInUp" data-wow-duration="500ms">
+                <h3>Coordonnées</h3>
+                <p>Je suis à votre écoute pour discuter de votre projet, répondre à votre besoin,<br> pour une
+                    collaboration ou un partenariat...</p>
+                <div class="contact-details">
+                    <div class="con-info clearfix">
+                        <i class="fa fa-home fa-lg"></i>
+                        <span>3 allée Larre Goiti Bidea, 64310 Ascain, France.</span>
+                    </div>
+
+                    <div class="con-info clearfix">
+                        <i class="fa fa-phone fa-lg"></i>
+                        <span>Mobile: 07-81-28-39-65</span>
+                    </div>
+
+                    <div class="con-info clearfix">
+                        <i class="fa fa-envelope fa-lg"></i>
+                        <span>Email: devart.freelance@gmail.com</span>
+                    </div>
+                </div>
+            </div>
+            <!-- / End Contact Details -->
+
+            <!-- Contact Form -->
+            <div class="contact-form col-md-6 wow fadeInUp" data-wow-duration="500ms" data-wow-delay="300ms">
+                <form id="contact-form" method="post" action="sendmail.php" role="form">
+
+                    <div class="form-group">
+                        <input type="text" placeholder="Votre nom" class="form-control" name="name" id="name">
+                    </div>
+
+                    <div class="form-group">
+                        <input type="email" placeholder="Votre Email" class="form-control" name="email" id="email">
+                    </div>
+
+                    <div class="form-group">
+                        <input type="text" placeholder="Sujet" class="form-control" name="subject" id="subject">
+                    </div>
+
+                    <div class="form-group">
+                        <textarea rows="6" placeholder="Message" class="form-control" name="message"
+                                  id="message"></textarea>
+                    </div>
+
+
+                    <div id="cf-submit">
+                        <input type="submit" id="contact-submit" class="btn btn-transparent" value="Envoyer">
+                    </div>
+
+                </form>
+            </div>
+            <!-- ./End Contact Form -->
+
+        </div> <!-- end row -->
+    </div> <!-- end container -->
+
+    <!-- Google Map -->
+    <div class="google-map wow fadeInDown" data-wow-duration="500ms">
+        <div id="map-canvas"></div>
+    </div>
+    <!-- /Google Map -->
+
+</section> <!-- end section -->
+
+<!-- end Contact Area
+========================================== -->
+
+<footer id="footer" class="bg-one">
+    <div class="container">
+        <div class="row wow fadeInUp" data-wow-duration="500ms">
+            <div class="col-lg-12">
+
+                <!-- Footer Social Links -->
+                <div class="social-icon">
+                    <ul>
+                        <li><a href="https://github.com/devart64"><i class="fa fa-github"></i></a></li>
+                        <li><a href="https://www.facebook.com/dev.art.756"><i class="fa fa-facebook"></i></a></li>
+                        <li><a href="https://twitter.com/devart64"><i class="fa fa-twitter"></i></a></li>
+                        <li><a href="https://plus.google.com/115362468876356330505"><i
+                                class="fa fa-google-plus"></i></a></li>
+                        <li><a href="https://www.youtube.com/channel/UC_MfmlYJ6sa8ZkFrh-OrdTw"><i
+                                class="fa fa-youtube"></i></a></li>
+                        <li><a href="https://www.linkedin.com/in/stephen-dupré-06888a118"><i class="fa fa-linkedin"></i></a>
+                        </li>
+                        <li><a href="https://dribbble.com/DEVART"><i class="fa fa-dribbble"></i></a></li>
+                    </ul>
+                </div>
+                <!--/. End Footer Social Links -->
+
+                <!-- copyright -->
+                <div class="copyright text-center">
+                    <a href="index.html">
+                        <img src="img/logo-dévart.png" alt="dév'art"/>
+                    </a>
+                    <br/>
+
+                    <p>Design And Developed by <a href="http://www.dévart.com"> dév'art</a>. Copyright &copy; 2017. All
+                        Rights Reserved.</p>
+                </div>
+                <!-- /copyright -->
+
+            </div> <!-- end col lg 12 -->
+        </div> <!-- end row -->
+    </div> <!-- end container -->
+</footer> <!-- end footer -->
+
+<!-- Back to Top
+============================== -->
+<a href="javascript:;" id="scrollUp">
+    <i class="fa fa-angle-up fa-2x"></i>
+</a>
+
+<!-- end Footer Area
+========================================== -->
+
+<!--
+Essential Scripts
+=====================================-->
+
+<!-- Main jQuery -->
+<script src="js/jquery-3.2.1.js"></script>
+<!-- Bootstrap 3.1 -->
+<script src="js/bootstrap.min.js"></script>
+<!-- Slitslider -->
+<script src="js/jquery.slitslider.js"></script>
+<script src="js/jquery.ba-cond.min.js"></script>
+<!-- Parallax -->
+<script src="js/jquery.parallax-1.1.3.js"></script>
+<!-- Owl Carousel -->
+<script src="js/owl.carousel.min.js"></script>
+<!-- Portfolio Filtering -->
+<script src="js/jquery.mixitup.min.js"></script>
+<!-- Custom Scrollbar -->
+<script src="js/jquery.nicescroll.min.js"></script>
+<!-- Jappear js -->
+<script src="js/jquery.appear.js"></script>
+<!-- Pie Chart -->
+<script src="js/easyPieChart.js"></script>
+<!-- jQuery Easing -->
+<script src="js/jquery.easing-1.3.pack.js"></script>
+<!-- tweetie.min -->
+<script src="js/tweetie.min.js"></script>
+<!-- Google Map API -->
+<script type="text/javascript"
+        src="http://maps.google.com/maps/api/js?key=AIzaSyCX5GwNM95FWiq5xoZCpGrLJD6WQBMmCkI&callback=initMap"></script>
+<!-- Highlight menu item -->
+<script src="js/jquery.nav.js"></script>
+<!-- Sticky Nav -->
+<script src="js/jquery.sticky.js"></script>
+<!-- Number Counter Script -->
+<script src="js/jquery.countTo.js"></script>
+<!-- wow.min Script -->
+<script src="js/wow.min.js"></script>
+<!-- For video responsive -->
+<script src="js/jquery.fitvids.js"></script>
+<!-- Grid js -->
+<script src="js/grid.js"></script>
+<!-- Custom js -->
+<script src="js/custom.js"></script>
+
+</body>
+</html>
